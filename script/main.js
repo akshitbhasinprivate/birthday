@@ -1,9 +1,4 @@
-
-// Animation Timeline
-const animationTimeline = () => {
-  // var x = document.getElementById("song");
-  // x.play();
-  window.addEventListener('load', function () {
+window.addEventListener('load', function () {
     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     var source = audioCtx.createBufferSource();
     var xhr = new XMLHttpRequest();
@@ -22,6 +17,11 @@ const animationTimeline = () => {
     });
     xhr.send();
 });
+// Animation Timeline
+const animationTimeline = () => {
+  // var x = document.getElementById("song");
+  // x.play();
+  
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
